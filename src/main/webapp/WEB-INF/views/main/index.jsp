@@ -9,9 +9,9 @@
 <meta charset="UTF-8">
 <title>바디앤솔</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common/style.reset.css"><!-- @1	 CSS 초기화			**삭제/수정금지** -->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common/style.common.css"><!-- @2  CSS 공통	 			**삭제금지/수정금지** -->
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common/style.fonts.css"><!-- @3  CSS 폰트  -->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.reset.css"><!-- @1	 CSS 초기화			**삭제/수정금지** -->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css"><!-- @2  CSS 공통	 			**삭제금지/수정금지** -->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.font.css"><!-- @3  CSS 폰트  -->
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/js/slick/slick.css"><!-- @7  CSS 플러그인 Slick -->
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/js/slick/slick-theme.css"><!-- @8  CSS 플러그인 Slick Theme -->
 <!-- [ 플러그인 ]*************************************************************************************	-->
@@ -23,16 +23,29 @@
 	margin: 0;
 	padding: 0;
 }
+a{
+	color: #111;
+}
 #allWrap{
 	width: 100%;
 	background: #313840;
 }
 .logo_wrap{
 	width: 100%;
-	text-align: center;
+	text-align: left; 
 }
 .logo_wrap > a > img{
 	width: 400px;
+}
+.menu_wrap{
+	width: 100%;
+}
+.menu_wrap > .gnb_wrap{
+	width: 100%;
+	overflow: hidden;
+}
+.menu_wrap > .gnb_wrap > .gnb{
+	float: left;
 }
 </style>
 </head>
