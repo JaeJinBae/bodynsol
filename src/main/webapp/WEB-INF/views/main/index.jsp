@@ -86,6 +86,20 @@ a{
 	color: #ffd8a7; 
 }
 </style>
+<script>
+$(function(){
+	$("#main_banner").slick({
+		arrows:true,
+		infinite:true,
+		speed:500,
+		fade:true,
+		cssEase:'linear',
+		autoplay:true,
+		autoplaySpeed:4000,
+		dots:true,
+	});
+});
+</script>
 </head>
 <body>
 	<div id="allWrap">
@@ -121,8 +135,12 @@ a{
 				</ul>
 			</div>
 		</header>
-		<section id="main_banner">
-			
+		<section id="main_banner_wrap">
+			<div id="main_banner">
+				<img src="${pageContext.request.contextPath}/resources/img/main/ban1.jpg">
+				<img src="${pageContext.request.contextPath}/resources/img/main/ban2.jpg">
+				<img src="${pageContext.request.contextPath}/resources/img/main/ban3.jpg">
+			</div>
 		</section>
 		<section id="menu01_01">
 			
