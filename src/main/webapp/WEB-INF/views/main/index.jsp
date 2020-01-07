@@ -23,29 +23,67 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	background: #313840;
+}
 a{
 	color: #111;
 }
 #allWrap{
 	width: 100%;
-	background: #313840;
 }
 .logo_wrap{
 	width: 100%;
-	text-align: left; 
+	padding: 15px 0;
+	padding-left: 200px;
+	text-align: left;
 }
-.logo_wrap > a > img{
-	width: 400px;
+.logo_wrap > a > img{ 
+	width: 300px;
 }
 .menu_wrap{
 	width: 100%;
 }
 .menu_wrap > .gnb_wrap{
-	width: 100%;
+	width: 800px;
+	margin: 0 auto;
 	overflow: hidden;
 }
 .menu_wrap > .gnb_wrap > .gnb{
 	float: left;
+	width: 20%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.gnb > a{
+	padding-top: 15px;
+	color: #fff;
+}
+.gnb_txt{
+	font-size: 20px;
+}
+.gnb:hover > .lnb_wrap{
+	display: block;
+}
+.gnb:hover > a{
+	border-top: 3px solid #ffd8a7;
+	color: #ffd8a7;
+	text-decoration: none;
+}
+.lnb_wrap{
+	margin-top: 30px;
+	display: none;
+}
+.lnb{
+	padding: 10px 0;
+}
+.lnb > a{
+	color: #fff;
+	font-size: 17px;
+}
+.lnb:hover > a{
+	color: #ffd8a7; 
 }
 </style>
 </head>
@@ -57,7 +95,7 @@ a{
 				<ul class="gnb_wrap">
 					<li class="gnb"><a href="#allWrap"><span class="gnb_txt">HOME</span></a></li>
 					<li class="gnb">
-						<span class="gnb_txt">BODYNSOL</span>
+						<a href="#menu01_01"><span class="gnb_txt">BODYNSOL</span></a>
 						<ul class="lnb_wrap">
 							<li class="lnb"><a href="#menu01_01">대표소개</a></li>
 							<li class="lnb"><a href="#menu01_02">강사진 소개</a></li>
@@ -66,12 +104,12 @@ a{
 						</ul>
 					</li>
 					<li class="gnb">
-						<span class="gnb_txt">ACADEMY</span>
+						<a href="#menu02_01"><span class="gnb_txt">ACADEMY</span></a>
 						<ul class="lnb_wrap">
 							<li class="lnb"><a href="#menu02_01">메디필라테스란?</a></li>
 							<li class="lnb"><a href="#menu02_02">지도자과정</a></li>
 							<li class="lnb"><a href="#menu02_03">프리메드시스템</a></li>
-							<li class="lnb"><a href="#menu02_04">오시는길</a></li>
+							<li class="lnb"><a href="#menu02_04">일정안내</a></li>
 						</ul>
 					</li>
 					<li class="gnb">
