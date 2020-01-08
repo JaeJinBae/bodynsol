@@ -33,9 +33,9 @@ a{
 	width: 100%;
 }
 .logo_wrap{
-	width: 100%;
+	/* width: 100%; */
 	padding: 15px 0;
-	padding-left: 200px;
+	margin-left: 200px;
 	text-align: left;
 }
 .logo_wrap > a > img{ 
@@ -85,19 +85,47 @@ a{
 .lnb:hover > a{
 	color: #ffd8a7; 
 }
+
+.sec{
+	width: 100%;
+	padding: 100px 0;
+}
+.section_content_wrap{
+	width: 100%;
+	text-align: center;
+}
+.section_content_wrap > img{
+	
+}
+#menu01_02{
+	background: #fff;
+}
+#menu01_02 > .section_content_wrap > img{
+	width: 75%;
+}
+#menu01_03{
+	background: #dedede;
+}
+#menu01_03 > .section_content_wrap > img{
+	width: 73%;
+}
 </style>
 <script>
 $(function(){
-	$("#main_banner").slick({
-		arrows:true,
-		infinite:true,
-		speed:500,
-		fade:true,
-		cssEase:'linear',
-		autoplay:true,
-		autoplaySpeed:4000,
-		dots:true,
-	});
+	$('#main_banner').slick({
+		   autoplay: true,
+		   autoplaySpeed: 7000,
+		   dots: true,
+		   arrows: true,
+		   pauseOnFocus:false,
+		   pauseOnHover:false,
+		   pauseOnDotsHover:false,
+		   draggable:false,
+		   cssEase: 'cubic-bezier(1, 0, 0.5, 1)',
+		   prevArrow: '<button class="slick-prev03" aria-label="Previous" type="button"><img src="resources/img/main/btn_prev.png" alt=""/></button>',
+		   nextArrow: '<button class="slick-next03" aria-label="Next" type="button"><img src="resources/img/main/btn_next.png" alt=""/></button>',
+		   fade: false
+		});
 });
 </script>
 </head>
@@ -142,40 +170,46 @@ $(function(){
 				<img src="${pageContext.request.contextPath}/resources/img/main/ban3.jpg">
 			</div>
 		</section>
-		<section id="menu01_01">
+		<section id="menu01_01" class="sec">
+			<div class="pc section_content_wrap">
+				<img src="${pageContext.request.contextPath}/resources/img/main/pc_section01.png">
+			</div>
+		</section>
+		<section id="menu01_02" class="sec">
+			<div class="pc section_content_wrap">
+				<img src="${pageContext.request.contextPath}/resources/img/main/pc_section02.jpg">
+			</div>
+		</section>
+		<section id="menu01_03" class="sec">
+			<div class="pc section_content_wrap">
+				<img src="${pageContext.request.contextPath}/resources/img/main/pc_section03.jpg">
+			</div>
+		</section>
+		<section id="menu01_04" class="sec">
 			
 		</section>
-		<section id="menu01_02">
+		<section id="menu01_05" class="sec">
 			
 		</section>
-		<section id="menu01_03">
+		<section id="menu02_01" class="sec">
 			
 		</section>
-		<section id="menu01_04">
+		<section id="menu02_02" class="sec">
 			
 		</section>
-		<section id="menu01_05">
+		<section id="menu02_03" class="sec">
 			
 		</section>
-		<section id="menu02_01">
+		<section id="menu02_04" class="sec">
 			
 		</section>
-		<section id="menu02_02">
+		<section id="menu03_01" class="sec">
 			
 		</section>
-		<section id="menu02_03">
+		<section id="menu03_02" class="sec">
 			
 		</section>
-		<section id="menu02_04">
-			
-		</section>
-		<section id="menu03_01">
-			
-		</section>
-		<section id="menu03_02">
-			
-		</section>
-		<section id="menu03_03">
+		<section id="menu03_03" class="sec">
 			
 		</section>
 	</div>
